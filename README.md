@@ -8,7 +8,7 @@
 
 ## Demo Video
 
-🎥 **[Watch the 2-minute Demo Video Here](#)** *(Placeholder for YouTube/Loom link)*
+<video src="https://github.com/user-attachments/assets/c89d13cb-3e86-4ac9-adff-7d67771e079d" controls width="100%"></video>
 
 ---
 
