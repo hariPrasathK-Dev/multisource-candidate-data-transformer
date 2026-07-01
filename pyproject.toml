@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.backends._legacy:_Backend"
+
+[project]
+name = "eightfold-candidate-transformer"
+version = "1.0.0"
+description = "Multi-Source Candidate Data Transformer — merges messy candidate data from CSV, ATS JSON, GitHub, and resumes into one clean canonical profile."
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "MIT"}
+authors = [
+    {name = "Candidate", email = "candidate@example.com"},
+]
+
+[project.scripts]
+transform = "src.main:cli"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
+addopts = "-v --tb=short"
