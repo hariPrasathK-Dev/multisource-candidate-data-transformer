@@ -6,20 +6,30 @@
 
 ---
 
+## Demo Video
+
+🎥 **[Watch the 2-minute Demo Video Here](#)** *(Placeholder for YouTube/Loom link)*
+
+---
+
 ## Architecture
 
-```
-┌─────────────────────────────────────────────────────────────────┐
-│              MULTI-SOURCE CANDIDATE DATA TRANSFORMER            │
-├─────────────────────────────────────────────────────────────────┤
-│                                                                 │
-│  CSV ──┐                                                        │
-│  JSON ─┤──→ DETECT → EXTRACT → NORMALIZE → RESOLVE → MERGE     │
-│  GitHub┤              ↑ LLM                  ↑ fuzzy   → SCORE  │
-│  Resume┘              ↓ regex fallback       ↓ exact     → PROJECT
-│                                                           → VALIDATE
-│                                                           → EMIT   │
-└─────────────────────────────────────────────────────────────────┘
+```text
+┌───────────────────────────────────────────────────────────────────────┐
+│                MULTI-SOURCE CANDIDATE DATA TRANSFORMER                │
+├───────────────────────────────────────────────────────────────────────┤
+│                                                                       │
+│  CSV ────┐                                                            │
+│  JSON ───┼──> DETECT ─> EXTRACT ─> NORMALIZE ─> RESOLVE ─> MERGE ──┐  │
+│  GitHub ─┤              │                       │                  │  │
+│  Resume ─┘              ├─> LLM                 ├─> Fuzzy          │  │
+│                         └─> Regex Fallback      └─> Exact          │  │
+│                                                                    v  │
+│                                                                  SCORE│
+│                                                                    │  │
+│  OUTPUT <── EMIT <── VALIDATE <── PROJECT <────────────────────────┘  │
+│                                                                       │
+└───────────────────────────────────────────────────────────────────────┘
 ```
 
 ### 7-Stage Pipeline
@@ -84,6 +94,10 @@ python -m src.main run --inputs data/sample_inputs/ -v
 ```bash
 pytest tests/ -v --tb=short
 ```
+
+### Produced Output
+
+The pipeline outputs a consolidated, schema-validated JSON file. Each field includes a full provenance trail. Example output files can be found in `data/sample_outputs/`.
 
 ---
 
@@ -202,7 +216,7 @@ Configurable via `config/source_trust.json`.
 
 ---
 
-## 🛡️ Edge Cases Handled
+## Edge Cases Handled
 
 | Scenario | Behavior |
 |----------|----------|
@@ -216,7 +230,7 @@ Configurable via `config/source_trust.json`.
 
 ---
 
-## 🔌 AWS Bedrock Setup (Optional)
+## AWS Bedrock Setup (Optional)
 
 The LLM extraction layer is optional. Without it, resumes use regex fallback (lower confidence).
 
@@ -230,9 +244,21 @@ export AWS_DEFAULT_REGION=us-east-1
 export BEDROCK_MODEL_ID=anthropic.claude-3-5-sonnet-20241022-v2:0
 ```
 
+## Assumptions & Descoped
+
+### Assumptions
+- **Trust Hierarchy**: We assume ATS records are the most reliable, followed by Recruiter exports, GitHub profiles, and lastly unstructured Resumes. (This is fully configurable).
+- **Primary Keys**: We assume emails and E.164-normalized phone numbers are strong enough to uniquely match candidates across sources.
+- **LLM Capabilities**: We assume Claude Sonnet is capable of robust structured extraction for English resumes.
+
+### Descoped
+- **Persistent Storage**: Saving to a database (e.g., PostgreSQL/MongoDB) is descoped to keep this a focused CLI data pipeline.
+- **Web Interface**: A frontend UI was descoped as a CLI was stated as acceptable and allows for better automation testing.
+- **Deep GitHub Code Analysis**: We infer candidate skills by looking at their top repository languages rather than deeply cloning and parsing the AST of their code.
+
 ---
 
-## 📊 Technology Stack
+## Technology Stack
 
 | Component | Technology | Why |
 |-----------|-----------|-----|
@@ -248,7 +274,3 @@ export BEDROCK_MODEL_ID=anthropic.claude-3-5-sonnet-20241022-v2:0
 | Testing | pytest | Industry standard |
 
 ---
-
-## 📝 License
-
-MIT
