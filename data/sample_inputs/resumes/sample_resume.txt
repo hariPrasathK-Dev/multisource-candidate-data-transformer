@@ -1,0 +1,41 @@
+Raj Patel
+Mumbai, Maharashtra, India | raj.patel@company.io | +91-98765-43210
+LinkedIn: https://linkedin.com/in/rajpatel | GitHub: https://github.com/rajpatel
+
+PROFESSIONAL SUMMARY
+Passionate backend developer with 3+ years of experience building scalable web applications
+and microservices. Expertise in Node.js, TypeScript, and cloud-native architectures.
+
+SKILLS
+Programming: JavaScript, TypeScript, Python, Go
+Frameworks: Node.js, Express.js, NestJS, FastAPI
+Databases: MongoDB, Redis, PostgreSQL, DynamoDB
+Cloud: AWS (Lambda, EC2, S3, SQS), Docker, Kubernetes
+Other: GraphQL, REST APIs, CI/CD, Git, Agile/Scrum
+
+WORK EXPERIENCE
+
+Backend Developer | StartupXYZ | March 2022 - Present
+- Designed and built event-driven microservices handling 50K+ requests/min
+- Implemented GraphQL API layer reducing frontend data fetching by 60%
+- Set up CI/CD pipelines with GitHub Actions and Docker
+- Mentored 2 junior developers
+
+Software Engineer Intern | TechStart Inc | June 2021 - February 2022
+- Built RESTful APIs using Express.js and MongoDB
+- Implemented real-time notification system using WebSockets
+- Wrote unit and integration tests achieving 85% code coverage
+
+EDUCATION
+
+Bachelor of Engineering in Computer Science
+University of Mumbai | 2018 - 2022
+GPA: 8.5/10
+
+CERTIFICATIONS
+- AWS Certified Developer Associate (2023)
+- MongoDB Certified Developer (2022)
+
+PROJECTS
+- Open-source contributor to Express.js middleware ecosystem (500+ GitHub stars)
+- Built a real-time chat application using Socket.io and Redis Pub/Sub

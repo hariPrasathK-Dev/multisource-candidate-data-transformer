@@ -1,0 +1,6 @@
+full_name,email,phone,location,title,skills,linkedin_url,github_url,company,years_experience
+Priya Sharma,priya.sharma@gmail.com,(555) 234-5678,"Bangalore, India",Senior Software Engineer,"Python, Java, AWS, k8s, ML",https://linkedin.com/in/priyasharma,https://github.com/priyasharma,Infosys,7
+John Doe,john.doe@techcorp.com,+1-415-555-0123,"San Francisco, CA, USA",Staff Engineer,"golang, rust, react, docker, postgres",https://linkedin.com/in/johndoe,,TechCorp Inc,12
+Emily Chen,emily.chen@outlook.com,(650) 555-9876,"Palo Alto, CA",ML Engineer,"pytorch, tensorflow, python, NLP, computer vision",,https://github.com/emilychen,DeepAI Labs,5
+Raj Patel,raj.patel@company.io,+91-98765-43210,"Mumbai, MH, India",Backend Developer,"node.js, typescript, mongodb, redis, graphql",https://linkedin.com/in/rajpatel,,StartupXYZ,3
+Sarah Johnson,sarah.j@email.com,not a phone,"New York, NY",Product Manager,"agile, scrum, jira, sql, figma",,,,8

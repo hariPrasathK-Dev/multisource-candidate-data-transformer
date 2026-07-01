@@ -1,0 +1,126 @@
+{
+  "candidates": [
+    {
+      "applicant_name": "Priya Sharma",
+      "contact_email": "priya.sharma@gmail.com",
+      "mobile": "+91-9876543210",
+      "location": {"city": "Bengaluru", "state": "Karnataka", "country": "India"},
+      "current_title": "Senior Software Engineer",
+      "skills": ["Python", "Java", "Amazon Web Services", "Kubernetes", "Machine Learning", "Django"],
+      "work_experience": [
+        {
+          "company": "Infosys",
+          "title": "Senior Software Engineer",
+          "start": "2020-03",
+          "end": null,
+          "summary": "Led a team of 5 engineers building ML-powered recommendation systems."
+        },
+        {
+          "company": "Wipro",
+          "title": "Software Engineer",
+          "start": "Jan 2017",
+          "end": "Feb 2020",
+          "summary": "Developed RESTful APIs and microservices for e-commerce platform."
+        }
+      ],
+      "education": [
+        {
+          "institution": "Indian Institute of Technology, Bombay",
+          "degree": "B.Tech",
+          "field_of_study": "Computer Science",
+          "end_year": 2017
+        }
+      ],
+      "linkedin_url": "https://linkedin.com/in/priyasharma",
+      "years_of_experience": 7
+    },
+    {
+      "applicant_name": "Jonathan Doe",
+      "contact_email": "john.doe@techcorp.com",
+      "mobile": "415-555-0123",
+      "location": "San Francisco, California, United States",
+      "current_title": "Staff Software Engineer",
+      "skills": ["Go", "Rust", "React", "Docker", "PostgreSQL", "Terraform", "CI/CD"],
+      "work_experience": [
+        {
+          "company": "TechCorp Inc",
+          "title": "Staff Software Engineer",
+          "start": "2019-06",
+          "end": null,
+          "summary": "Architecting distributed systems processing 1M+ events/sec."
+        },
+        {
+          "company": "Google",
+          "title": "Senior Software Engineer",
+          "start": "2015-01",
+          "end": "2019-05",
+          "summary": "Worked on Google Cloud infrastructure team."
+        },
+        {
+          "company": "StartupABC",
+          "title": "Software Engineer",
+          "start": "2012-08",
+          "end": "2014-12",
+          "summary": "Full-stack development with Ruby on Rails."
+        }
+      ],
+      "education": [
+        {
+          "institution": "Stanford University",
+          "degree": "M.S.",
+          "field_of_study": "Computer Science",
+          "end_year": 2012
+        },
+        {
+          "institution": "UC Berkeley",
+          "degree": "B.S.",
+          "field_of_study": "Electrical Engineering & Computer Science",
+          "end_year": 2010
+        }
+      ],
+      "github_url": "https://github.com/johndoe",
+      "years_of_experience": 12
+    },
+    {
+      "applicant_name": "Emily Chen",
+      "contact_email": ["emily.chen@outlook.com", "emily@deepailabs.com"],
+      "mobile": "+16505559876",
+      "location": "Palo Alto, CA, US",
+      "current_title": "Machine Learning Engineer",
+      "skills": ["PyTorch", "TensorFlow", "Python", "Natural Language Processing", "Computer Vision", "Pandas", "NumPy"],
+      "work_experience": [
+        {
+          "company": "DeepAI Labs",
+          "title": "ML Engineer",
+          "start": "2021-01",
+          "end": null,
+          "summary": "Building state-of-the-art NLP models for document understanding."
+        },
+        {
+          "company": "Facebook AI Research",
+          "title": "Research Intern",
+          "start": "2020-06",
+          "end": "2020-12",
+          "summary": "Worked on computer vision models for image segmentation."
+        }
+      ],
+      "education": [
+        {
+          "institution": "Massachusetts Institute of Technology",
+          "degree": "M.S.",
+          "field_of_study": "Artificial Intelligence",
+          "end_year": 2021
+        },
+        {
+          "institution": "University of Michigan",
+          "degree": "B.S.",
+          "field_of_study": "Computer Science",
+          "end_year": 2019
+        }
+      ],
+      "linkedin_url": "https://linkedin.com/in/emilychen",
+      "github_url": "https://github.com/emilychen",
+      "years_of_experience": 5
+    }
+  ]
+}

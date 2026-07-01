@@ -1,0 +1,3 @@
+{
+  "_comment": "This file will be populated when the pipeline runs with default schema. Run: python -m src.main run --inputs data/sample_inputs/ --output data/sample_outputs/default_output.json"
+}

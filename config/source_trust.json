@@ -1,0 +1,8 @@
+{
+  "ats_json": 0.9,
+  "recruiter_csv": 0.8,
+  "github_api": 0.75,
+  "resume_llm": 0.7,
+  "resume_regex_fallback": 0.5,
+  "unknown": 0.3
+}
